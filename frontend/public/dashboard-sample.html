@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoAware Dashboard Sample</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f4f7f1;
+        color: #173126;
+      }
+
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 32px 16px 48px;
+      }
+
+      .card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 16px;
+        margin: 24px 0;
+      }
+
+      .card,
+      .panel {
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 20px;
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+      }
+
+      .badge-list,
+      .leaderboard {
+        display: grid;
+        gap: 12px;
+      }
+
+      button {
+        border: 0;
+        border-radius: 999px;
+        background: #2b6b50;
+        color: white;
+        padding: 12px 18px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Eco Dashboard</h1>
+
+      <section class="panel">
+        <h2>User</h2>
+        <p><strong>Name:</strong> <span id="user-name">-</span></p>
+        <p><strong>Email:</strong> <span id="user-email">-</span></p>
+        <p><strong>User ID:</strong> <span id="user-id">-</span></p>
+      </section>
+
+      <section class="card-grid">
+        <article class="card">
+          <h3>Points</h3>
+          <p id="points-value">0</p>
+        </article>
+        <article class="card">
+          <h3>Impact Score</h3>
+          <p id="impact-value">0</p>
+        </article>
+        <article class="card">
+          <h3>Level</h3>
+          <p id="level-value">1</p>
+        </article>
+        <article class="card">
+          <h3>Current Streak</h3>
+          <p id="streak-value">0</p>
+        </article>
+      </section>
+
+      <section class="panel">
+        <h2>Badges</h2>
+        <div id="badge-list" class="badge-list"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Leaderboard</h2>
+        <div id="leaderboard" class="leaderboard"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Challenge Action</h2>
+        <button id="complete-challenge">Complete Challenge (+10)</button>
+      </section>
+    </main>
+
+    <script src="/dashboard-sample.js"></script>
+  </body>
+  </html>
