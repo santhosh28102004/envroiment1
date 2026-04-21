@@ -54,7 +54,7 @@ export const environmentalTopics = [
   {
     id: 'pollution',
     title: 'Pollution: Air, Water, Soil, Noise',
-    image: 'https://www.studento.co.in/envgeo/images/environmental-pollution.jpg',
+    image: 'https://www.studento.co.in/environment/images/environmental-pollution.jpge',
     description: 'Harmful substances in air, water, soil, and sound that affect health and ecosystems.',
     content: {
       whatItIs: 'Pollution is the introduction of harmful substances or energy into the environment, degrading air, water, soil, and even soundscapes.',
